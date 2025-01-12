@@ -72,7 +72,7 @@ jobs:
       - name: Push space robots demo image 
         run: |
           docker images
-          docker tag space_robots:latest ghcr.io/kaneleo/space_robots:latest
+          docker tag space_robots_demo:latest ghcr.io/kaneleo/space_robots:latest
           docker push ghcr.io/kaneleo/space_robots:latest
           docker images         
       #   uses: docker/build-push-action@v2
